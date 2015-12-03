@@ -9,7 +9,7 @@ var strings = require("cloud/strings.js");
 
 app.set('views', 'cloud/views');
 app.set('view engine', 'ejs');
-app.use(bodyParser());
+app.use(bodyParser.text());
 
 function extend(target) {
     var sources = [].slice.call(arguments, 1);

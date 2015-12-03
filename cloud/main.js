@@ -2,10 +2,10 @@ var Parse = require("parse-cloud-express").Parse;
 
 require("cloud/app.js");
 
-var twilioAccountSid = 'Your-Twilio-Account-Sid';
-var twilioAuthToken = 'Your-Twilio-Auth-Token';
-var twilioPhoneNumber = 'Your-Twilio-Phone-Number';
-var secretPasswordToken = 'Something-Random-Here';
+var twilioAccountSid = process.env.TWILIO_ACCOUNT_SID;
+var twilioAuthToken = process.env.TWILIO_AUTH_TOKEN;
+var twilioPhoneNumber = process.env.TWILIO_PHONE_NUMBER;
+var secretPasswordToken = process.env.TWILIO_SECRET_PASSWORD_TOKEN;
 
 var language = "en";
 var languages = ["en", "es", "ja", "kr", "pt-BR"];

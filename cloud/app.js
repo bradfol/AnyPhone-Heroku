@@ -1,4 +1,5 @@
 var express = require("express");
+var bodyParser = require("body-parser");
 var app = express();
 
 var language = "en";
@@ -8,7 +9,7 @@ var strings = require("cloud/strings.js");
 
 app.set('views', 'cloud/views');
 app.set('view engine', 'ejs');
-app.use(express.bodyParser());
+app.use(bodyParser());
 
 function extend(target) {
     var sources = [].slice.call(arguments, 1);

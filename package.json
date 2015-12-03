@@ -1,0 +1,22 @@
+{
+  "name": "Parse-Cloud-Code-Heroku",
+  "version": "1.0.0",
+  "description": "Migrating Cloud Code to Heroku with Express",
+  "main": "server",
+  "scripts": {
+    "start": "NODE_PATH=$NODE_PATH:./lib node server.js",
+    "postinstall": "NODE_PATH=$NODE_PATH:./lib node scripts/register-webhooks.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "body-parser": "~1.12.4",
+    "mongodb": "~2.0.33",
+    "parse": "~1.6",
+    "parse-cloud-express": "~1.0",
+    "multer": "~0.1.8",
+    "jsonfile": "~2.2.3"
+  },
+  "engines": {
+    "node": "0.12.2"
+  }
+}

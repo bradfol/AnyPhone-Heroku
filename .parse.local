@@ -1,0 +1,11 @@
+{
+  "applications": {
+    "AnyPhoneTest": {
+      "parseAppId": "9BJ2Yuyq4UzHaDJInDIlwvA0VOfJtswEqK8YN99X",
+      "herokuAppId": "3051c9b5-b582-45df-9a01-ca56a5e79859"
+    },
+    "_default": {
+      "link": "AnyPhoneTest"
+    }
+  }
+}

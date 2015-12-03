@@ -1,6 +1,6 @@
 var Parse = require("parse-cloud-express").Parse;
 
-require("cloud/app.js");
+require("./app.js");
 
 var twilioAccountSid = process.env.TWILIO_ACCOUNT_SID;
 var twilioAuthToken = process.env.TWILIO_AUTH_TOKEN;

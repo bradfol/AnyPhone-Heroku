@@ -5,9 +5,9 @@ var app = express();
 var language = "en";
 var languages = ["en", "es", "ja", "kr", "pt-BR"];
 
-var strings = require("cloud/strings.js");
+var strings = require("./strings.js");
 
-app.set('views', 'cloud/views');
+app.set('views', './views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.text());
 

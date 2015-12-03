@@ -12,7 +12,7 @@
     "body-parser": "~1.12.4",
     "mongodb": "~2.0.33",
     "parse": "~1.6",
-    "parse-cloud-express": "~1.0",
+    "parse-cloud-express": "~1.1",
     "multer": "~0.1.8",
     "jsonfile": "~2.2.3",
     "twilio": "~2.5.2"

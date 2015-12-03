@@ -18,9 +18,9 @@ app.use(express.static(__dirname + '/public'));
 var language = "en";
 var languages = ["en", "es", "ja", "kr", "pt-BR"];
 
-var strings = require("./strings.js");
+var strings = require("./cloud/strings.js");
 
-app.set('views', './views');
+app.set('views', './cloud/views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.text());
 

@@ -4,8 +4,8 @@
  */
 
 if (!process.env.HOOKS_URL || !process.env.PARSE_APP_ID || !process.env.PARSE_MASTER_KEY) {
-  console.log('*** WARNING *** Could not register hooks, environment variables are not set!');
-  process.exit(0);
+  console.log('*** ERROR *** Could not register hooks, environment variables are not set!');
+  process.exit(1);
 }
 
 var Webhooks = require('parse-cloud-express');
@@ -29,11 +29,11 @@ Parse.initialize(process.env.PARSE_APP_ID, 'unused', process.env.PARSE_MASTER_KE
 // The logic for this script is just these 8 functions chained in serial promises:
 getServerTriggers()
     .then(getServerFunctions)
+    .then(registerFunctions)
     .then(registerBeforeSaves)
     .then(registerAfterSaves)
     .then(registerBeforeDeletes)
     .then(registerAfterDeletes)
-    .then(registerFunctions)
     .then(function() {
       console.log('Hooks registration completed.');
     });

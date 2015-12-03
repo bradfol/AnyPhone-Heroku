@@ -14,7 +14,8 @@
     "parse": "~1.6",
     "parse-cloud-express": "~1.0",
     "multer": "~0.1.8",
-    "jsonfile": "~2.2.3"
+    "jsonfile": "~2.2.3",
+    "twilio": "~2.5.2"
   },
   "engines": {
     "node": "0.12.2"

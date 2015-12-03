@@ -1,3 +1,5 @@
+var Parse = require("parse-cloud-express").Parse;
+
 require("cloud/app.js");
 
 var twilioAccountSid = 'Your-Twilio-Account-Sid';

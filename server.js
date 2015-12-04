@@ -66,7 +66,7 @@ app.post('/', function(req, res) {
       res.render("index.ejs", extend(strings[language], {warning: strings[language]['warningPhone'], 'language': language}));
     }
     Parse.Cloud.run("sendCode", {phoneNumber: phoneNumber, language: language}).then(function(response){
-      if(!response){
+      if(response){
         res.render("verify.ejs", extend(strings[language], {phoneNumber: phoneNumber, 'language': language}));
       } else {
         res.render("index.ejs", extend(strings[language], {warning: strings[language]['warningTwilio'], 'language': language}));

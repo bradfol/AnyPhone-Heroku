@@ -24,7 +24,7 @@ var strings = require("./cloud/strings.js");
 
 app.set('views', './cloud/views');
 app.set('view engine', 'ejs');
-app.use(bodyParser.text());
+app.use(bodyParser.urlencoded());
 
 function extend(target) {
     var sources = [].slice.call(arguments, 1);

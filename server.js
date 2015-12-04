@@ -5,6 +5,8 @@ var http = require('http'),
     Parse = require('parse/node'),
     ParseCloud = require('parse-cloud-express');
 
+Parse.initialize(process.env.PARSE_APP_ID, null, process.env.PARSE_MASTER_KEY);
+
 var app = express();
 
 // Import your cloud code (which configures the routes)

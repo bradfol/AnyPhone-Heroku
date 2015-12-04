@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "express": "~4.9.x",
+    "ejs": "~2.3.4",
     "body-parser": "~1.12.4",
     "parse": "~1.6",
     "parse-cloud-express": "~1.1",
